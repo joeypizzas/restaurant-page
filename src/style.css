@@ -9,6 +9,10 @@ html, body {
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #fff8f0;
 }
 
 nav {
@@ -16,7 +20,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0 0 0;
     background-color: #fff8f0;
 }
 
@@ -34,6 +38,69 @@ nav {
     background-color: #27ae60;
 }
 
+#content {
+    flex: 1;
+    background-color: #fff8f0;
+}
+
+#home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff8f0;
+    gap: 4rem;
+}
+
+#home-page-header-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2e2e2e;
+    border-bottom: 4px solid #c0392b;
+    padding-bottom: 0.2em;
+    letter-spacing: 0.05em;
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 40rem;
+    border: 4px solid #c0392b;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.page-section:hover {
+    border-color: #27ae60;
+}
+
+.page-section-header {
+    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.page-section-header-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2e2e2e;
+}
+
+.page-section-text {
+    font-size: 1.25rem;
+    color: #2e2e2e;
+}
+
+ul {
+    margin: 0;
+  }
+  
 #footer {
     display: flex;
     justify-content: center;
