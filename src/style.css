@@ -74,10 +74,6 @@ nav {
     padding: 1.5rem;
 }
 
-.page-section:hover {
-    border-color: #27ae60;
-}
-
 .page-section-header {
     align-self: start;
     display: flex;
