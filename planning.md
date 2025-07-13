@@ -9,9 +9,15 @@
     - Below that, it's location. 
 - Menu: 
     - Menu header, same style as header on home. 
-    - Appetizers section. 
-    - Pizzas section. 
-    - Drinks section. 
+    - Appetizers:
+        - Header
+        - 2-3 appetizers. 
+    - Pizzas:
+        - Header
+        - 2-3 Pizzas
+    - Drinks section 
+        - Header 
+        - 2-3 drinks
 - About page:
     - About header, same style as home. 
     - Section describing the history of the restaurant. 
