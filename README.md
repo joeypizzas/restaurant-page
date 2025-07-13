@@ -2,7 +2,7 @@
 Simple restaurant page created as part of The Odin Project. Built by [joeypizzas](https://github.com/joeypizzas).
 
 **Icons used under the following ISC license**
-_Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022._
+_Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022_
 
 _Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies._
 
