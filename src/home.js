@@ -1,6 +1,6 @@
 // JS for restaurant home page
 
-function addHomePage() {
+export function addHomePage() {
     const content = document.getElementById("content");
 
     const homePage = document.createElement("div");
