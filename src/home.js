@@ -161,4 +161,14 @@ function addHomePage() {
     homePageLocation.appendChild(locationText);
 
     content.appendChild(homePage);
+
+    const homePageSections = document.querySelectorAll(".page-section");
+    homePageSections.forEach(section => {
+        section.addEventListener("mouseover", () => {
+            section.style.borderColor = "#27ae60";
+        });
+        section.addEventListener("mouseout", () => {
+            section.style.borderColor = "#c0392b";
+        });
+    });
 }
