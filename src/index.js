@@ -3,4 +3,4 @@
 import "./style.css";       
 import { addHomePage } from "./home.js";
 
-addHomePage();
+// addHomePage();
