@@ -5,13 +5,16 @@ export function addHomePage() {
 
     const homePage = document.createElement("div");
     homePage.id = "home-page";
+    homePage.classList = "page";
 
     const homePageHeader = document.createElement("div");
     homePageHeader.id = "home-page-header";
+    homePageHeader.classList = "page-header";
     homePage.appendChild(homePageHeader);
 
     const homePageHeaderText = document.createElement("div");
     homePageHeaderText.id = "home-page-header-text";
+    homePageHeaderText.classList = "page-header-text";
     homePageHeaderText.textContent = "Joey's Pizzas";
     homePageHeader.appendChild(homePageHeaderText);
 
