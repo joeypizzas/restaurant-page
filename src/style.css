@@ -43,7 +43,7 @@ nav {
     background-color: #fff8f0;
 }
 
-#home-page {
+.page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ nav {
     gap: 4rem;
 }
 
-#home-page-header-text {
+.page-header-text {
     font-size: 4rem;
     font-weight: bold;
     color: #2e2e2e;
@@ -72,6 +72,10 @@ nav {
     border: 4px solid #c0392b;
     border-radius: 8px;
     padding: 1.5rem;
+}
+
+.page-section-divider {
+    border-bottom: 4px solid #c0392b;
 }
 
 .page-section-header {
