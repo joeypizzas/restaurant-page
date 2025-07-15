@@ -11,13 +11,22 @@
     - Menu header, same style as header on home. 
     - Appetizers:
         - Header
-        - 2-3 appetizers. 
+        - 2-3 appetizers:
+            -  - $6
+            - Meatball Plate – Three house-made beef & pork meatballs in marinara, topped with pecorino - $9
+            - Arugula Salad – Peppery arugula, shaved parmesan, lemon vinaigrette - $8
     - Pizzas:
         - Header
-        - 2-3 Pizzas
+        - Apizzas (18")
+            - Classic Tomato Pie – No cheese, just our signature crushed tomato sauce, garlic, and oregano - $20
+            - Mozzarella – Tomato sauce, whole milk mozz, and grated pecorino - $22
+            - Pepperoni – Mozzarella, tomato sauce, and cup-and-char pepperoni with crispy edges - $24
     - Drinks section 
         - Header 
-        - 2-3 drinks
+        - Drinks:
+            - Coke, Diet Coke, Sprite – Ice cold, always classic - $3
+            - House Red or White Wine – Served by the glass or carafe - $8 glass / $24 carafe
+            - Italian Lemonade – Fresh lemon, sparkling water, sugar, served over ice - $4
 - About page:
     - About header, same style as home. 
     - Section describing the history of the restaurant. 
