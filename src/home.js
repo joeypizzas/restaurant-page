@@ -45,7 +45,7 @@ export function addHomePage() {
     pizzaSVG.setAttribute("stroke-width", "2");
     pizzaSVG.setAttribute("stroke-linecap", "round");
     pizzaSVG.setAttribute("stroke-linejoin", "round");
-    pizzaSVG.setAttribute("id", "pizza-svg");
+    pizzaSVG.setAttribute("class", "pizza-svg");
     const paths = [
         "m12 14-1 1",
         "m13.75 18.25-1.25 1.42",
