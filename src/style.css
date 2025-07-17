@@ -99,6 +99,7 @@ nav {
 }
 
 .menu-item {
+    align-self: start;
     display: flex;
     flex-direction: column;
     gap: .5rem;
