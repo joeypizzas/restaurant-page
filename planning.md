@@ -12,8 +12,8 @@
     - Appetizers:
         - Header
         - 2-3 appetizers:
-            -  - $6
-            - Meatball Plate – Three house-made beef & pork meatballs in marinara, topped with pecorino - $9
+            -  Garlic Knots – Fresh-baked, brushed with garlic butter, served with house red sauce - $6
+            - Meatball Plate – Four house-made beef & pork meatballs in marinara, topped with pecorino - $9
             - Arugula Salad – Peppery arugula, shaved parmesan, lemon vinaigrette - $8
     - Pizzas:
         - Header
