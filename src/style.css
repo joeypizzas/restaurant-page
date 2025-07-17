@@ -75,7 +75,8 @@ nav {
 }
 
 .page-section-divider {
-    border-bottom: 4px solid #c0392b;
+    border-top: 4px solid #c0392b;
+    padding-top: 1rem;
 }
 
 .page-section-header {
@@ -95,6 +96,18 @@ nav {
 .page-section-text {
     font-size: 1.25rem;
     color: #2e2e2e;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.menu-item-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
 }
 
 ul {
