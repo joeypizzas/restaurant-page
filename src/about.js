@@ -145,4 +145,8 @@ export function addAboutPage() {
     pageHeaderText.addEventListener("mouseout", () => {
         pageHeaderText.style.borderColor = "#c0392b";
     });
+
+    const aboutButton = document.querySelector("#about-button");
+    aboutButton.classList.add("is-selected");
+    aboutButton.style.backgroundColor = "#27ae60";
 }
