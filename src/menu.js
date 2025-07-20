@@ -8,7 +8,7 @@ import mozzarellaImage from "./assets/mozz_pie.png";
 import pepperoniImage from "./assets/pepperoni_pie.png";
 
 export function addMenuPage() {
-    const element = document.getElementById("content");
+    const content = document.getElementById("content");
 
     const menuPage = document.createElement("div");
     menuPage.id = "menu-page";
@@ -135,5 +135,279 @@ export function addMenuPage() {
     appetizersGarlicKnotsImage.alt = "Garlic Knots";
     appetizersGarlicKnots.appendChild(appetizersGarlicKnotsImage);
 
+    const appetizersMeatballPlate = document.createElement("div");
+    appetizersMeatballPlate.id = "appetizers-meatball-plate";
+    appetizersMeatballPlate.classList = "menu-item page-section-divider";
+    menuAppetizers.appendChild(appetizersMeatballPlate);
 
+    const appetizersMeatballPlateName = document.createElement("div");
+    appetizersMeatballPlateName.id = "appetizers-meatball-plate-name";
+    appetizersMeatballPlateName.classList = "page-section-text";
+    appetizersMeatballPlateName.textContent = " ";
+    const meatballStrong = document.createElement("strong");
+    meatballStrong.textContent = "Meatball Plate - ";
+    const meatballNormalText = document.createTextNode("Four house-made beef & pork meatballs in marinara, topped with pecorino - $9");
+    appetizersMeatballPlateName.appendChild(meatballStrong);
+    appetizersMeatballPlateName.appendChild(meatballNormalText);
+    appetizersMeatballPlate.appendChild(appetizersMeatballPlateName);
+
+    const appetizersMeatballPlateImage = document.createElement("img");
+    appetizersMeatballPlateImage.id = "appetizers-meatball-plate-image";
+    appetizersMeatballPlateImage.classList = "menu-item-image";
+    appetizersMeatballPlateImage.src = meatballsImage;
+    appetizersMeatballPlateImage.alt = "Meatball Plate";
+    appetizersMeatballPlate.appendChild(appetizersMeatballPlateImage);
+
+    const appetizersArugulaSalad = document.createElement("div");
+    appetizersArugulaSalad.id = "appetizers-arugula-salad";
+    appetizersArugulaSalad.classList = "menu-item page-section-divider";
+    menuAppetizers.appendChild(appetizersArugulaSalad);
+
+    const appetizersArugulaSaladName = document.createElement("div");
+    appetizersArugulaSaladName.id = "appetizers-arugula-salad-name";
+    appetizersArugulaSaladName.classList = "page-section-text";
+    appetizersArugulaSaladName.textContent = " ";
+    const arugulaStrong = document.createElement("strong");
+    arugulaStrong.textContent = "Arugula Salad - ";
+    const arugulaNormalText = document.createTextNode("Peppery arugula, shaved parmesan, lemon vinaigrette - $8");
+    appetizersArugulaSaladName.appendChild(arugulaStrong);
+    appetizersArugulaSaladName.appendChild(arugulaNormalText);
+    appetizersArugulaSalad.appendChild(appetizersArugulaSaladName);
+
+    const appetizersArugulaSaladImage = document.createElement("img");
+    appetizersArugulaSaladImage.id = "appetizers-arugula-salad-image";
+    appetizersArugulaSaladImage.classList = "menu-item-image";
+    appetizersArugulaSaladImage.src = arugulaSaladImage;
+    appetizersArugulaSaladImage.alt = "Arugula Salad";
+    appetizersArugulaSalad.appendChild(appetizersArugulaSaladImage);
+
+    const menuPizzas = document.createElement("div");
+    menuPizzas.id = "menu-pizzas";
+    menuPizzas.classList = "page-section";
+    menuPage.appendChild(menuPizzas);
+
+    const pizzasHeader = document.createElement("div");
+    pizzasHeader.id = "pizzas-header";
+    pizzasHeader.classList = "page-section-header";
+    menuPizzas.appendChild(pizzasHeader);
+
+    const pizzasHeaderText = document.createElement("div");
+    pizzasHeaderText.id = "pizzas-header-text";
+    pizzasHeaderText.classList = "page-section-header-text";
+    pizzasHeaderText.textContent = "Pizzas";
+    pizzasHeader.appendChild(pizzasHeaderText);
+
+    const pizzaSVG = document.createElementNS(svgNS, "svg");
+    pizzaSVG.setAttribute("xmlns", svgNS);
+    pizzaSVG.setAttribute("width", "30");
+    pizzaSVG.setAttribute("height", "30");
+    pizzaSVG.setAttribute("viewBox", "0 0 24 24");
+    pizzaSVG.setAttribute("fill", "none");
+    pizzaSVG.setAttribute("stroke", "#c0392b");
+    pizzaSVG.setAttribute("stroke-width", "2");
+    pizzaSVG.setAttribute("stroke-linecap", "round");
+    pizzaSVG.setAttribute("stroke-linejoin", "round");
+    pizzaSVG.setAttribute("class", "pizza-svg");
+    const pizzaPaths = [
+        "m12 14-1 1",
+        "m13.75 18.25-1.25 1.42",
+        "M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12",
+        "M18.8 9.3a1 1 0 0 0 2.1 7.7",
+        "M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z"
+    ];
+    pizzaPaths.forEach(d => {
+        const path = document.createElementNS(svgNS, "path");
+        path.setAttribute("d", d);
+        pizzaSVG.appendChild(path);
+    });
+    pizzasHeader.appendChild(pizzaSVG);
+
+    const pizzasTomatoPie = document.createElement("div");
+    pizzasTomatoPie.id = "pizzas-tomato-pie";
+    pizzasTomatoPie.classList = "menu-item";
+    menuPizzas.appendChild(pizzasTomatoPie);
+
+    const pizzasTomatoPieName = document.createElement("div");
+    pizzasTomatoPieName.id = "pizzas-tomato-pie-name";
+    pizzasTomatoPieName.classList = "page-section-text";
+    pizzasTomatoPieName.textContent = " ";
+    const tomatoPieStrong = document.createElement("strong");
+    tomatoPieStrong.textContent = "Classic Tomato Pie - ";
+    const tomatoPieNormalText = document.createTextNode("No cheese, just our signature crushed tomato sauce, garlic, and oregano - $20");
+    pizzasTomatoPieName.appendChild(tomatoPieStrong);
+    pizzasTomatoPieName.appendChild(tomatoPieNormalText);
+    pizzasTomatoPie.appendChild(pizzasTomatoPieName);
+
+    const pizzasTomatoPieImage = document.createElement("img");
+    pizzasTomatoPieImage.id = "pizzas-tomato-pie-image";
+    pizzasTomatoPieImage.classList = "menu-item-image";
+    pizzasTomatoPieImage.src = tomatoPieImage;
+    pizzasTomatoPieImage.alt = "Classic Tomato Pie";
+    pizzasTomatoPie.appendChild(pizzasTomatoPieImage);
+
+    const pizzasMozzarella = document.createElement("div");
+    pizzasMozzarella.id = "pizzas-mozzarella";
+    pizzasMozzarella.classList = "menu-item page-section-divider";
+    menuPizzas.appendChild(pizzasMozzarella);
+
+    const pizzasMozzarellaName = document.createElement("div");
+    pizzasMozzarellaName.id = "pizzas-mozzarella-name";
+    pizzasMozzarellaName.classList = "page-section-text";
+    pizzasMozzarellaName.textContent = " ";
+    const mozzarellaStrong = document.createElement("strong");
+    mozzarellaStrong.textContent = "Mozzarella - ";
+    const mozzarellaNormalText = document.createTextNode("Tomato sauce, whole milk mozz, and grated pecorino - $22");   
+    pizzasMozzarellaName.appendChild(mozzarellaStrong);
+    pizzasMozzarellaName.appendChild(mozzarellaNormalText);
+    pizzasMozzarella.appendChild(pizzasMozzarellaName);
+
+    const pizzasMozzarellaImage = document.createElement("img");
+    pizzasMozzarellaImage.id = "pizzas-mozzarella-image";
+    pizzasMozzarellaImage.classList = "menu-item-image";
+    pizzasMozzarellaImage.src = mozzarellaImage;
+    pizzasMozzarellaImage.alt = "Mozzarella Pie";
+    pizzasMozzarella.appendChild(pizzasMozzarellaImage);
+
+    const pizzasPepperoni = document.createElement("div");
+    pizzasPepperoni.id = "pizzas-pepperoni";
+    pizzasPepperoni.classList = "menu-item page-section-divider";
+    menuPizzas.appendChild(pizzasPepperoni);
+
+    const pizzasPepperoniName = document.createElement("div");
+    pizzasPepperoniName.id = "pizzas-pepperoni-name";
+    pizzasPepperoniName.classList = "page-section-text";
+    pizzasPepperoniName.textContent = " ";
+    const pepperoniStrong = document.createElement("strong");
+    pepperoniStrong.textContent = "Pepperoni - ";
+    const pepperoniNormalText = document.createTextNode("Mozzarella, tomato sauce, and cup-and-char pepperoni with crispy edges - $24");
+    pizzasPepperoniName.appendChild(pepperoniStrong);
+    pizzasPepperoniName.appendChild(pepperoniNormalText);
+    pizzasPepperoni.appendChild(pizzasPepperoniName);
+
+    const pizzasPepperoniImage = document.createElement("img");
+    pizzasPepperoniImage.id = "pizzas-pepperoni-image";
+    pizzasPepperoniImage.classList = "menu-item-image";
+    pizzasPepperoniImage.src = pepperoniImage;
+    pizzasPepperoniImage.alt = "Pepperoni Pie"; 
+    pizzasPepperoni.appendChild(pizzasPepperoniImage);
+
+    const menuDrinks = document.createElement("div");
+    menuDrinks.id = "menu-drinks";
+    menuDrinks.classList = "page-section";
+    menuPage.appendChild(menuDrinks);
+    
+    const drinksHeader = document.createElement("div");
+    drinksHeader.id = "drinks-header";
+    drinksHeader.classList = "page-section-header";
+    menuDrinks.appendChild(drinksHeader);
+
+    const drinksHeaderText = document.createElement("div");
+    drinksHeaderText.id = "drinks-header-text";
+    drinksHeaderText.classList = "page-section-header-text";
+    drinksHeaderText.textContent = "Drinks";
+    drinksHeader.appendChild(drinksHeaderText);
+
+    const drinksSVG = document.createElementNS(svgNS, "svg");
+    drinksSVG.setAttribute("xmlns", svgNS);
+    drinksSVG.setAttribute("width", "30");
+    drinksSVG.setAttribute("height", "30");
+    drinksSVG.setAttribute("viewBox", "0 0 24 24");
+    drinksSVG.setAttribute("fill", "none");
+    drinksSVG.setAttribute("stroke", "#c0392b");
+    drinksSVG.setAttribute("stroke-width", "2");
+    drinksSVG.setAttribute("stroke-linecap", "round");
+    drinksSVG.setAttribute("stroke-linejoin", "round");
+    drinksSVG.setAttribute("class", "drinks-svg");
+    const drinksPaths = [
+        "m6 8 1.75 12.28a2 2 0 0 0 2 1.72h4.54a2 2 0 0 0 2-1.72L18 8",
+        "M5 8h14",
+        "M7 15a6.47 6.47 0 0 1 5 0 6.47 6.47 0 0 0 5 0",
+        "m12 8 1-6h2"
+    ];
+    drinksPaths.forEach(d => {
+        const path = document.createElementNS(svgNS, "path");
+        path.setAttribute("d", d);
+        drinksSVG.appendChild(path);
+    });
+    drinksHeader.appendChild(drinksSVG);
+
+    const drinksCoke = document.createElement("div");
+    drinksCoke.id = "drinks-coke";
+    drinksCoke.classList = "menu-item";
+    menuDrinks.appendChild(drinksCoke);
+
+    const drinksCokeName = document.createElement("div");
+    drinksCokeName.id = "drinks-coke-name";
+    drinksCokeName.classList = "page-section-text";
+    drinksCokeName.textContent = " ";
+    const drinksCokeStrong = document.createElement("strong");
+    drinksCokeStrong.textContent = "Coke, Diet Coke, Sprite – ";
+    const drinksCokeNormalText = document.createTextNode("Ice cold, always classic - $3");
+    drinksCokeName.appendChild(drinksCokeStrong);
+    drinksCokeName.appendChild(drinksCokeNormalText);
+    drinksCoke.appendChild(drinksCokeName);
+
+    const drinksWine = document.createElement("div");
+    drinksWine.id = "drinks-wine";
+    drinksWine.classList = "menu-item page-section-divider";
+    menuDrinks.appendChild(drinksWine);
+
+    const drinksWineName = document.createElement("div");
+    drinksWineName.id = "drinks-wine-name";
+    drinksWineName.classList = "page-section-text";
+    drinksWineName.textContent = " ";
+    const drinksWineStrong = document.createElement("strong");
+    drinksWineStrong.textContent = "House Red or White Wine – ";
+    const drinksWineNormalText = document.createTextNode("Served by the glass or carafe - $8 glass / $24 carafe");
+    drinksWineName.appendChild(drinksWineStrong);
+    drinksWineName.appendChild(drinksWineNormalText);
+    drinksWine.appendChild(drinksWineName);
+
+    const drinksLemonade = document.createElement("div");
+    drinksLemonade.id = "drinks-lemonade";
+    drinksLemonade.classList = "menu-item page-section-divider";
+    menuDrinks.appendChild(drinksLemonade);
+
+    const drinksLemonadeName = document.createElement("div");
+    drinksLemonadeName.id = "drinks-lemonade-name";
+    drinksLemonadeName.classList = "page-section-text";
+    drinksLemonadeName.textContent = " ";
+    const drinksLemonadeStrong = document.createElement("strong");
+    drinksLemonadeStrong.textContent = "Italian Lemonade – ";
+    const drinksLemonadeNormalText = document.createTextNode("Fresh lemon, sparkling water, sugar, served over ice - $4");
+    drinksLemonadeName.appendChild(drinksLemonadeStrong);
+    drinksLemonadeName.appendChild(drinksLemonadeNormalText);
+    drinksLemonade.appendChild(drinksLemonadeName);
+    
+    content.appendChild(menuPage);
+
+    const homePageSections = document.querySelectorAll(".page-section");
+    homePageSections.forEach(section => {
+        section.addEventListener("mouseover", () => {
+            section.style.borderColor = "#27ae60";
+            const dividers = section.querySelectorAll(".page-section-divider");
+            dividers.forEach(divider => {
+                divider.style.borderColor = "#27ae60";
+            });
+            const svg = section.querySelector("svg");
+            svg.style.stroke = "#27ae60";
+        });
+        section.addEventListener("mouseout", () => {
+            section.style.borderColor = "#c0392b";
+            const dividers = section.querySelectorAll(".page-section-divider");
+            dividers.forEach(divider => {
+                divider.style.borderColor = "#c0392b";
+            });
+            const svg = section.querySelector("svg");
+            svg.style.stroke = "#c0392b";
+        });
+    });
+
+    const pageHeaderText = document.querySelector(".page-header-text");
+    pageHeaderText.addEventListener("mouseover", () => {
+        pageHeaderText.style.borderColor = "#27ae60";
+    });
+    pageHeaderText.addEventListener("mouseout", () => {
+        pageHeaderText.style.borderColor = "#c0392b";
+    });
 }
