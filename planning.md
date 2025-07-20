@@ -65,4 +65,4 @@
     - Hardcode first to get the style right, then create it in the JS module before exporting the function that adds it to the main JS file. 
     - Maybe some highlight effects on the non-header sections that are included in the loading function. 
 - Footer:
-    - Hardcode via HTML with relevant styles. 
+    - Hardcode via HTML with relevant styles.
