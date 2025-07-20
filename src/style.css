@@ -34,10 +34,6 @@ nav {
     cursor: pointer;
 }
 
-.nav-button:hover {
-    background-color: #27ae60;
-}
-
 #content {
     flex: 1;
     background-color: #fff8f0;
