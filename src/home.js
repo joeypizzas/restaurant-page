@@ -169,9 +169,21 @@ export function addHomePage() {
     homePageSections.forEach(section => {
         section.addEventListener("mouseover", () => {
             section.style.borderColor = "#27ae60";
+            const svg = section.querySelector("svg");
+            svg.style.stroke = "#27ae60";
         });
         section.addEventListener("mouseout", () => {
             section.style.borderColor = "#c0392b";
+            const svg = section.querySelector("svg");
+            svg.style.stroke = "#c0392b";
         });
+    });
+
+    const pageHeaderText = document.querySelector(".page-header-text");
+    pageHeaderText.addEventListener("mouseover", () => {
+        pageHeaderText.style.borderColor = "#27ae60";
+    });
+    pageHeaderText.addEventListener("mouseout", () => {
+        pageHeaderText.style.borderColor = "#c0392b";
     });
 }
