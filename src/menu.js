@@ -410,4 +410,8 @@ export function addMenuPage() {
     pageHeaderText.addEventListener("mouseout", () => {
         pageHeaderText.style.borderColor = "#c0392b";
     });
+
+    const menuButton = document.querySelector("#menu-button");
+    menuButton.classList.add("is-selected");
+    menuButton.style.backgroundColor = "#27ae60";
 }
