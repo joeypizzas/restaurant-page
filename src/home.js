@@ -186,4 +186,8 @@ export function addHomePage() {
     pageHeaderText.addEventListener("mouseout", () => {
         pageHeaderText.style.borderColor = "#c0392b";
     });
+
+    const homeButton = document.querySelector("#home-button");
+    homeButton.classList.add("is-selected");
+    homeButton.style.backgroundColor = "#27ae60";
 }
