@@ -381,8 +381,8 @@ export function addMenuPage() {
     
     content.appendChild(menuPage);
 
-    const homePageSections = document.querySelectorAll(".page-section");
-    homePageSections.forEach(section => {
+    const menuPageSections = document.querySelectorAll(".page-section");
+    menuPageSections.forEach(section => {
         section.addEventListener("mouseover", () => {
             section.style.borderColor = "#27ae60";
             const dividers = section.querySelectorAll(".page-section-divider");
