@@ -1,5 +1,6 @@
 // JS for about page 
 
+// Add about page to content via DOM manipulation
 export function addAboutPage() {
     const content = document.getElementById("content");
 

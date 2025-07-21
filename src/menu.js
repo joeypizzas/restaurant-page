@@ -7,6 +7,7 @@ import tomatoPieImage from "./assets/tomato_pie.png";
 import mozzarellaImage from "./assets/mozz_pie.png";
 import pepperoniImage from "./assets/pepperoni_pie.png";
 
+// Add menu page to content via DOM manipulation
 export function addMenuPage() {
     const content = document.getElementById("content");
 

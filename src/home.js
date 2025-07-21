@@ -1,5 +1,6 @@
 // JS for restaurant home page
 
+// Add home page to content via DOM manipulation
 export function addHomePage() {
     const content = document.getElementById("content");
 

@@ -1,10 +1,14 @@
 // Main JS for the restaurant page
 
+// Import CSS
 import "./style.css";       
+
+// Import page functions from each module
 import { addHomePage } from "./home.js";
 import { addMenuPage } from "./menu.js";
 import { addAboutPage } from "./about.js";
 
+// Remove current page and deselect previously selected button
 function removeCurrentPage() {
     const currentPage = document.querySelector(".page");
     if (currentPage) {
